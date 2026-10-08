@@ -60,7 +60,7 @@ so a new stage or car can be added without releasing a new version of either.
 
 ## License
 
-To be defined by the maintainer.
+CC BY 4.0.
 
 ---
 
