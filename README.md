@@ -47,6 +47,9 @@ The maintainer reviews and merges by hand. Nothing reaches the website until the
 
 ### Rules checked automatically
 
+A GitHub check named **Validate** runs these rules on every pull request, so you see the problem before the maintainer does.
+You can run it yourself: `node scripts/validate.mjs`.
+
 - ids are unique (cars, courses, specials)
 - every item has a `name` and `labels.fr` / `labels.en`
 - each in-game name (`sav_aliases`) is used by one item only, and contains only letters, digits and `_` (80 characters at most)
@@ -60,7 +63,7 @@ so a new stage or car can be added without releasing a new version of either.
 
 ## License
 
-CC BY 4.0.
+[CC BY 4.0](LICENSE). Reuse is welcome with credit to this catalog.
 
 ---
 
@@ -70,4 +73,4 @@ Catalogue communautaire d'**Assetto Corsa Rally** : voitures, spéciales, régio
 **noms internes du jeu** (`sav_aliases`). Données non officielles, sans affiliation avec Kunos Simulazioni, Steam ni Valve.
 
 Pour contribuer : modifie `donnees.json` (id unique, nom du jeu dans `sav_aliases`, libellés FR et EN) et ouvre une pull request.
-Le mainteneur relit et fusionne à la main.
+Un contrôle automatique (**Validate**) vérifie les règles sur chaque pull request. Le mainteneur relit et fusionne à la main.

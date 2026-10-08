@@ -1,0 +1,972 @@
+{
+  "schemaVersion": 2,
+  "regions": [
+    {
+      "id": "alsace",
+      "labels": {
+        "fr": "Alsace",
+        "en": "Alsace"
+      },
+      "sav_aliases": [
+        "alsace",
+        "Alsace"
+      ]
+    },
+    {
+      "id": "livigno",
+      "labels": {
+        "fr": "Livigno",
+        "en": "Livigno"
+      },
+      "sav_aliases": [
+        "livigno",
+        "Livigno"
+      ]
+    },
+    {
+      "id": "monte-carlo",
+      "labels": {
+        "fr": "Monte-Carlo",
+        "en": "Monte-Carlo"
+      },
+      "sav_aliases": [
+        "monte-carlo",
+        "Monte-Carlo",
+        "MonteCarlo"
+      ]
+    },
+    {
+      "id": "pays-de-galles",
+      "labels": {
+        "fr": "Pays de Galles",
+        "en": "Wales"
+      },
+      "sav_aliases": [
+        "pays-de-galles",
+        "Pays de Galles",
+        "wales",
+        "Wales"
+      ]
+    },
+    {
+      "id": "grece",
+      "labels": {
+        "fr": "Grèce",
+        "en": "Greece"
+      },
+      "sav_aliases": []
+    }
+  ],
+  "modes": {
+    "DefaultTimeAttack": "Time attack",
+    "DefaultFreePractice": "Essai libre"
+  },
+  "weather": {
+    "WT_CLEAR": "Soleil",
+    "WT_HEAVY_CLOUDS": "Nuages"
+  },
+  "cars": [
+    {
+      "id": "citroen-xsara-wrc-2001",
+      "name": "Citroën Xsara WRC",
+      "drivetrain": "4WD",
+      "group": "Groupe WR",
+      "category": "WR EVO2",
+      "class": "WRC",
+      "labels": {
+        "fr": "Citroën Xsara WRC",
+        "en": "Citroen Xsara WRC"
+      },
+      "sav_aliases": [
+        "CitroenXsaraWRC"
+      ]
+    },
+    {
+      "id": "lancia-stratos-gr4-1976",
+      "name": "Lancia Stratos Gr.4",
+      "drivetrain": "RWD",
+      "group": "Groupe 2/4",
+      "category": "H1",
+      "class": "Group 4",
+      "labels": {
+        "fr": "Lancia Stratos Gr.4",
+        "en": "Lancia Stratos Gr.4"
+      },
+      "sav_aliases": [
+        "LanciaStratosHF"
+      ]
+    },
+    {
+      "id": "lancia-rally-037-evo2-grb-1984",
+      "name": "Lancia Rally 037 EVO 2",
+      "drivetrain": "RWD",
+      "group": "Groupe B",
+      "category": "B2",
+      "class": "Group B",
+      "labels": {
+        "fr": "Lancia Rally 037 EVO 2",
+        "en": "Lancia Rally 037 EVO 2"
+      },
+      "sav_aliases": [
+        "LanciaRally037Evo2"
+      ]
+    },
+    {
+      "id": "hyundai-i20n-rally2-2021",
+      "name": "Hyundai i20N Rally2",
+      "drivetrain": "4WD",
+      "group": "Groupe R",
+      "category": "Rally2/R5",
+      "class": "Rally2",
+      "labels": {
+        "fr": "Hyundai i20N Rally2",
+        "en": "Hyundai i20N Rally2"
+      },
+      "sav_aliases": [
+        "Hyundaii20NRally2"
+      ]
+    },
+    {
+      "id": "alfa-romeo-gta-1300-junior-gr2-1972",
+      "name": "Alfa Romeo GTA 1300 Junior",
+      "drivetrain": "RWD",
+      "group": "Groupe 2/4",
+      "category": "H3",
+      "class": "Group 2",
+      "labels": {
+        "fr": "Alfa Romeo GTA 1300 Junior",
+        "en": "Alfa Romeo GTA 1300 Junior"
+      },
+      "sav_aliases": [
+        "AlfaRomeoGTA1300"
+      ]
+    },
+    {
+      "id": "lancia-delta-hf-integrale-evo-gra-1992",
+      "name": "Lancia Delta HF Integrale EVO",
+      "drivetrain": "4WD",
+      "group": "Groupe A",
+      "category": "A8 EVO2",
+      "class": "Group A",
+      "labels": {
+        "fr": "Lancia Delta HF Integrale EVO",
+        "en": "Lancia Delta HF Integrale EVO"
+      },
+      "sav_aliases": [
+        "LanciaDeltaIntegraleEvo"
+      ]
+    },
+    {
+      "id": "mini-cooper-s-gr2-1964",
+      "name": "Mini Cooper S",
+      "drivetrain": "FWD",
+      "group": "Groupe 2/4",
+      "category": "H3",
+      "class": "Group 2",
+      "labels": {
+        "fr": "Mini Cooper S",
+        "en": "Mini Cooper S"
+      },
+      "sav_aliases": [
+        "MiniCooperS1275"
+      ]
+    },
+    {
+      "id": "peugeot-208-rally4-2020",
+      "name": "Peugeot 208 Rally4",
+      "drivetrain": "FWD",
+      "group": "Groupe R",
+      "category": "Rally4",
+      "class": "Rally4",
+      "labels": {
+        "fr": "Peugeot 208 Rally4",
+        "en": "Peugeot 208 Rally4"
+      },
+      "sav_aliases": [
+        "Peugeot208Rally4"
+      ]
+    },
+    {
+      "id": "fiat-131-abarth-gr4-1976",
+      "name": "Fiat 131 Abarth",
+      "drivetrain": "RWD",
+      "group": "Groupe 2/4",
+      "category": "H1",
+      "class": "Group 4",
+      "labels": {
+        "fr": "Fiat 131 Abarth",
+        "en": "Fiat 131 Abarth"
+      },
+      "sav_aliases": [
+        "Fiat131Abarth"
+      ]
+    },
+    {
+      "id": "fiat-124-sport-abarth-rally-16v-gr4-1973",
+      "name": "Fiat 124 Sport Abarth Rally 16V",
+      "drivetrain": "RWD",
+      "group": "Groupe 2/4",
+      "category": "H2",
+      "class": "Group 4",
+      "labels": {
+        "fr": "Fiat 124 Sport Abarth Rally 16V",
+        "en": "Fiat 124 Sport Abarth Rally 16V"
+      },
+      "sav_aliases": [
+        "Fiat124Abarth"
+      ]
+    },
+    {
+      "id": "alpine-a110-gr4-1973",
+      "name": "Alpine A110",
+      "drivetrain": "RWD",
+      "group": "Groupe 2/4",
+      "category": "H2",
+      "class": "Group 4",
+      "labels": {
+        "fr": "Alpine A110",
+        "en": "Alpine A110"
+      },
+      "sav_aliases": [
+        "AlpineA110"
+      ]
+    },
+    {
+      "id": "lancia-fulvia-coupe-16-hf-gr4-1970",
+      "name": "Lancia Fulvia Coupé 1.6 HF",
+      "drivetrain": "FWD",
+      "group": "Groupe 2/4",
+      "category": "H3",
+      "class": "Group 4",
+      "labels": {
+        "fr": "Lancia Fulvia Coupé 1.6 HF",
+        "en": "Lancia Fulvia Coupe 1.6 HF"
+      },
+      "sav_aliases": [
+        "LanciaFulviaHF"
+      ]
+    },
+    {
+      "id": "skoda-fabia-rs-rally2-2022",
+      "name": "Škoda Fabia RS Rally2",
+      "drivetrain": "4WD",
+      "group": "Groupe R",
+      "category": "Rally2/R5",
+      "class": "Rally2",
+      "labels": {
+        "fr": "Škoda Fabia RS Rally2",
+        "en": "Skoda Fabia RS Rally2"
+      },
+      "sav_aliases": [
+        "SkodaFabiaRSRally2"
+      ]
+    },
+    {
+      "id": "peugeot-306-maxi-kit-car-1997",
+      "name": "Peugeot 306 Maxi Kit Car",
+      "drivetrain": "FWD",
+      "group": "Groupe A",
+      "category": "K11",
+      "class": "Kit Car",
+      "labels": {
+        "fr": "Peugeot 306 Maxi Kit Car",
+        "en": "Peugeot 306 Maxi Kit Car"
+      },
+      "sav_aliases": [
+        "Peugeot306IIMaxiKitCar"
+      ]
+    },
+    {
+      "id": "subaru-impreza-s3-group-a-1993",
+      "name": "Subaru Impreza S3",
+      "drivetrain": "4WD",
+      "group": "Groupe A",
+      "category": "A8 EVO3",
+      "class": "Group A",
+      "labels": {
+        "fr": "Subaru Impreza S3",
+        "en": "Subaru Impreza S3"
+      },
+      "sav_aliases": [
+        "SubaruImprezaS3"
+      ]
+    },
+    {
+      "id": "audi-quattro-gr4-1981",
+      "name": "Audi Quattro Gr.4",
+      "drivetrain": "4WD",
+      "group": "Groupe 2/4",
+      "category": "H1",
+      "class": "Group 4",
+      "labels": {
+        "fr": "Audi Quattro Gr.4",
+        "en": "Audi Quattro Gr.4"
+      },
+      "sav_aliases": [
+        "AudiQuattroGr4"
+      ]
+    },
+    {
+      "id": "volkswagen-polo-gti-r5-2018",
+      "name": "Volkswagen Polo GTI R5",
+      "drivetrain": "4WD",
+      "group": "Groupe R",
+      "category": "Rally2/R5",
+      "class": "Rally2",
+      "labels": {
+        "fr": "Volkswagen Polo GTI R5",
+        "en": "Volkswagen Polo GTI R5"
+      },
+      "sav_aliases": [
+        "VWPoloGTIR5"
+      ]
+    },
+    {
+      "id": "peugeot-206-wrc-1999",
+      "name": "Peugeot 206 WRC",
+      "drivetrain": "4WD",
+      "group": "Groupe WR",
+      "category": "WR EVO1",
+      "class": "WRC",
+      "labels": {
+        "fr": "Peugeot 206 WRC",
+        "en": "Peugeot 206 WRC"
+      },
+      "sav_aliases": [
+        "Peugeot206"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "vallee-de-munster",
+      "region": "alsace",
+      "name": "Vallée de Munster",
+      "labels": {
+        "fr": "Vallée de Munster",
+        "en": "Munster Valley"
+      },
+      "sav_aliases": [
+        "Munster"
+      ],
+      "specials": [
+        {
+          "id": "vallee-de-munster-descente",
+          "name": "Vallée de Munster Descente",
+          "labels": {
+            "fr": "Vallée de Munster Descente",
+            "en": "Munster Valley Descent"
+          },
+          "sav_aliases": [
+            "AlsaceS2MunsterFullReverse"
+          ]
+        },
+        {
+          "id": "vallee-de-munster-montee",
+          "name": "Vallée de Munster Montée",
+          "labels": {
+            "fr": "Vallée de Munster Montée",
+            "en": "Munster Valley Climb"
+          },
+          "sav_aliases": [
+            "AlsaceS2MunsterFullForward"
+          ]
+        },
+        {
+          "id": "foret-de-munster",
+          "name": "Forêt de Munster",
+          "labels": {
+            "fr": "Forêt de Munster",
+            "en": "Munster Forest"
+          },
+          "sav_aliases": [
+            "AlsaceS2MunsterShort1Reverse"
+          ]
+        },
+        {
+          "id": "luttencach-pres-munster",
+          "name": "Luttenbach près Munster",
+          "labels": {
+            "fr": "Luttenbach près Munster",
+            "en": "Luttencach near Munster"
+          },
+          "sav_aliases": [
+            "AlsaceS2MunsterShort1Forward"
+          ]
+        },
+        {
+          "id": "col-du-petit-ballon",
+          "name": "Col du petit Ballon",
+          "labels": {
+            "fr": "Col du petit Ballon",
+            "en": "Petit Ballon Pass"
+          },
+          "sav_aliases": [
+            "AlsaceS2MunsterShort2Reverse"
+          ]
+        },
+        {
+          "id": "sommet-de-munster",
+          "name": "Sommet de Munster",
+          "labels": {
+            "fr": "Sommet de Munster",
+            "en": "Munster Summit"
+          },
+          "sav_aliases": [
+            "AlsaceS2MunsterShort2Forward"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saverne",
+      "region": "alsace",
+      "name": "Saverne",
+      "labels": {
+        "fr": "Saverne",
+        "en": "Saverne"
+      },
+      "sav_aliases": [
+        "Saverne",
+        "saverne"
+      ],
+      "specials": [
+        {
+          "id": "steigenbach",
+          "name": "Steigenbach",
+          "labels": {
+            "fr": "Steigenbach",
+            "en": "Steigenbach"
+          },
+          "sav_aliases": [
+            "AlsaceS4SaverneFullReverse"
+          ]
+        },
+        {
+          "id": "foret-de-saverne",
+          "name": "Forêt de Saverne",
+          "labels": {
+            "fr": "Forêt de Saverne",
+            "en": "Saverne Forest"
+          },
+          "sav_aliases": [
+            "AlsaceS4SaverneFullForward"
+          ]
+        },
+        {
+          "id": "obersteigen",
+          "name": "Obersteigen",
+          "labels": {
+            "fr": "Obersteigen",
+            "en": "Obersteigen"
+          },
+          "sav_aliases": [
+            "AlsaceS4SaverneShort1Forward"
+          ]
+        },
+        {
+          "id": "la-traversee-de-la-mossig",
+          "name": "La traversée de La Mossig",
+          "labels": {
+            "fr": "La traversée de La Mossig",
+            "en": "La Mossig Crossing"
+          },
+          "sav_aliases": [
+            "AlsaceS4SaverneShort1Reverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circuit-de-livigno",
+      "region": "livigno",
+      "name": "Circuit de Livigno",
+      "labels": {
+        "fr": "Circuit de Livigno",
+        "en": "Livigno Circuit"
+      },
+      "sav_aliases": [
+        "Livigno",
+        "CircuitDeLivigno"
+      ],
+      "specials": [
+        {
+          "id": "circuit-de-livigno",
+          "name": "Circuit de Livigno",
+          "labels": {
+            "fr": "Circuit de Livigno",
+            "en": "Livigno Circuit"
+          },
+          "sav_aliases": [
+            "LivignoTestTrack01FullForward"
+          ]
+        },
+        {
+          "id": "circuit-de-livigno-inverse",
+          "name": "Circuit de Livigno : inversé",
+          "labels": {
+            "fr": "Circuit de Livigno : inversé",
+            "en": "Livigno Circuit: reversed"
+          },
+          "sav_aliases": [
+            "LivignoTestTrack01FullReverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "col-de-turini",
+      "region": "monte-carlo",
+      "name": "Col de Turini",
+      "labels": {
+        "fr": "Col de Turini",
+        "en": "Col de Turini"
+      },
+      "sav_aliases": [
+        "MonteCarloS1Bollene"
+      ],
+      "specials": [
+        {
+          "id": "la-bollene-vesubie-peira-cava",
+          "name": "La Bollène-Vésubie - Peïra Cava",
+          "labels": {
+            "fr": "La Bollène-Vésubie - Peïra Cava",
+            "en": "La Bollène-Vésubie - Peïra Cava"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneFullForward"
+          ]
+        },
+        {
+          "id": "peira-cava-la-bollene-vesubie",
+          "name": "Peïra Cava - La Bollène-Vésubie",
+          "labels": {
+            "fr": "Peïra Cava - La Bollène-Vésubie",
+            "en": "Peïra Cava - La Bollène-Vésubie"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneFullReverse"
+          ]
+        },
+        {
+          "id": "la-bollene-vesubie-turini",
+          "name": "La Bollène-Vésubie - Turini",
+          "labels": {
+            "fr": "La Bollène-Vésubie - Turini",
+            "en": "La Bollène-Vésubie - Turini"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneCut1Forward"
+          ]
+        },
+        {
+          "id": "turini-la-bollene-vesubie",
+          "name": "Turini - La Bollène-Vésubie",
+          "labels": {
+            "fr": "Turini - La Bollène-Vésubie",
+            "en": "Turini - La Bollène-Vésubie"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneCut1Reverse"
+          ]
+        },
+        {
+          "id": "turini-peira-cava",
+          "name": "Turini - Peïra Cava",
+          "labels": {
+            "fr": "Turini - Peïra Cava",
+            "en": "Turini - Peïra Cava"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneCut2Forward"
+          ]
+        },
+        {
+          "id": "peira-cava-turini",
+          "name": "Peïra Cava - Turini",
+          "labels": {
+            "fr": "Peïra Cava - Turini",
+            "en": "Peïra Cava - Turini"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneCut2Reverse"
+          ]
+        },
+        {
+          "id": "pra-dalart",
+          "name": "Pra d'Alart",
+          "labels": {
+            "fr": "Pra d'Alart",
+            "en": "Pra d'Alart"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneCut3Forward"
+          ]
+        },
+        {
+          "id": "sommet-de-turini",
+          "name": "Sommet de Turini",
+          "labels": {
+            "fr": "Sommet de Turini",
+            "en": "Turini Summit"
+          },
+          "sav_aliases": [
+            "MonteCarloS1BolleneCut3Reverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sisteron",
+      "region": "monte-carlo",
+      "name": "Sisteron",
+      "labels": {
+        "fr": "Sisteron",
+        "en": "Sisteron"
+      },
+      "sav_aliases": [
+        "Sisteron"
+      ],
+      "specials": [
+        {
+          "id": "sisteron-st-geniez",
+          "name": "Sisteron - St. Geniez",
+          "labels": {
+            "fr": "Sisteron - St. Geniez",
+            "en": "Sisteron - St. Geniez"
+          },
+          "sav_aliases": [
+            "MonteCarloS2SisteronFullForward"
+          ]
+        },
+        {
+          "id": "st-geniez-sisteron",
+          "name": "St. Geniez - Sisteron",
+          "labels": {
+            "fr": "St. Geniez - Sisteron",
+            "en": "St. Geniez - Sisteron"
+          },
+          "sav_aliases": [
+            "MonteCarloS2SisteronFullReverse"
+          ]
+        },
+        {
+          "id": "sisteron-mezien",
+          "name": "Sisteron - Mézien",
+          "labels": {
+            "fr": "Sisteron - Mézien",
+            "en": "Sisteron - Mézien"
+          },
+          "sav_aliases": [
+            "MonteCarloS2SisteronCut1Forward"
+          ]
+        },
+        {
+          "id": "mezien-sisteron",
+          "name": "Mézien - Sisteron",
+          "labels": {
+            "fr": "Mézien - Sisteron",
+            "en": "Mézien - Sisteron"
+          },
+          "sav_aliases": [
+            "MonteCarloS2SisteronCut1Reverse"
+          ]
+        },
+        {
+          "id": "mezien-st-geniez",
+          "name": "Mézien - St. Geniez",
+          "labels": {
+            "fr": "Mézien - St. Geniez",
+            "en": "Mézien - St. Geniez"
+          },
+          "sav_aliases": [
+            "MonteCarloS2SisteronCut2Forward"
+          ]
+        },
+        {
+          "id": "st-geniez-mezien",
+          "name": "St. Geniez - Mézien",
+          "labels": {
+            "fr": "St. Geniez - Mézien",
+            "en": "St. Geniez - Mézien"
+          },
+          "sav_aliases": [
+            "MonteCarloS2SisteronCut2Reverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hafren-north",
+      "region": "pays-de-galles",
+      "name": "Hafren North",
+      "labels": {
+        "fr": "Hafren North",
+        "en": "Hafren North"
+      },
+      "sav_aliases": [
+        "HafrenNorth"
+      ],
+      "specials": [
+        {
+          "id": "cwmbiga-afon-biga",
+          "name": "Cwmbiga - Afon Biga",
+          "labels": {
+            "fr": "Cwmbiga - Afon Biga",
+            "en": "Cwmbiga - Afon Biga"
+          },
+          "sav_aliases": [
+            "WelesS3HafrenNorthFullForward"
+          ]
+        },
+        {
+          "id": "afon-biga-cwmbiga",
+          "name": "Afon Biga - Cwmbiga",
+          "labels": {
+            "fr": "Afon Biga - Cwmbiga",
+            "en": "Afon Biga - Cwmbiga"
+          },
+          "sav_aliases": [
+            "WelesS3HafrenNorthFullReverse"
+          ]
+        },
+        {
+          "id": "cwmbiga-fedw-fain",
+          "name": "Cwmbiga - Fedw Fain",
+          "labels": {
+            "fr": "Cwmbiga - Fedw Fain",
+            "en": "Cwmbiga - Fedw Fain"
+          },
+          "sav_aliases": [
+            "WelesS3HafrenNorthCut1Forward"
+          ]
+        },
+        {
+          "id": "fedw-fain-cwmbiga",
+          "name": "Fedw Fain - Cwmbiga",
+          "labels": {
+            "fr": "Fedw Fain - Cwmbiga",
+            "en": "Fedw Fain - Cwmbiga"
+          },
+          "sav_aliases": [
+            "WelesS3HafrenNorthCut1Reverse"
+          ]
+        },
+        {
+          "id": "banc-gwyn-afon-biga",
+          "name": "Banc Gwyn - Afon Biga",
+          "labels": {
+            "fr": "Banc Gwyn - Afon Biga",
+            "en": "Banc Gwyn - Afon Biga"
+          },
+          "sav_aliases": [
+            "WelesS3HafrenNorthCut2Forward"
+          ]
+        },
+        {
+          "id": "afon-biga-banc-gwyn",
+          "name": "Afon Biga - Banc Gwyn",
+          "labels": {
+            "fr": "Afon Biga - Banc Gwyn",
+            "en": "Afon Biga - Banc Gwyn"
+          },
+          "sav_aliases": [
+            "WelesS3HafrenNorthCut2Reverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hafren-south",
+      "region": "pays-de-galles",
+      "name": "Hafren South",
+      "labels": {
+        "fr": "Hafren South",
+        "en": "Hafren South"
+      },
+      "sav_aliases": [
+        "HafrenSouth"
+      ],
+      "specials": [
+        {
+          "id": "afon-bidno-severn",
+          "name": "Afon Bidno - Severn",
+          "labels": {
+            "fr": "Afon Bidno - Severn",
+            "en": "Afon Bidno - Severn"
+          },
+          "sav_aliases": [
+            "WelesS4HafrenSouthFullForward"
+          ]
+        },
+        {
+          "id": "severn-afon-bidno",
+          "name": "Severn - Afon Bidno",
+          "labels": {
+            "fr": "Severn - Afon Bidno",
+            "en": "Severn - Afon Bidno"
+          },
+          "sav_aliases": [
+            "WelesS4HafrenSouthFullReverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elatia",
+      "region": "grece",
+      "name": "Elatia",
+      "labels": {
+        "fr": "Elatia",
+        "en": "Elatia"
+      },
+      "sav_aliases": [],
+      "specials": [
+        {
+          "id": "elatia-zeli",
+          "name": "Elatia - Zeli",
+          "labels": {
+            "fr": "Elatia - Zeli",
+            "en": "Elatia - Zeli"
+          },
+          "sav_aliases": [
+            "GreeceS3ElatiaFullForward"
+          ]
+        },
+        {
+          "id": "zeli-elatia",
+          "name": "Zeli - Elatia",
+          "labels": {
+            "fr": "Zeli - Elatia",
+            "en": "Zeli - Elatia"
+          },
+          "sav_aliases": [
+            "GreeceS3ElatiaFullReverse"
+          ]
+        },
+        {
+          "id": "elatia",
+          "name": "Elatia",
+          "labels": {
+            "fr": "Elatia",
+            "en": "Elatia"
+          },
+          "sav_aliases": [
+            "GreeceS3ElatiaCut1Forward"
+          ]
+        },
+        {
+          "id": "elatia-inverse",
+          "name": "Elatia inversé",
+          "labels": {
+            "fr": "Elatia inversé",
+            "en": "Elatia reversed"
+          },
+          "sav_aliases": [
+            "GreeceS3ElatiaCut1Reverse"
+          ]
+        },
+        {
+          "id": "zeli",
+          "name": "Zeli",
+          "labels": {
+            "fr": "Zeli",
+            "en": "Zeli"
+          },
+          "sav_aliases": [
+            "GreeceS3ElatiaCut2Forward"
+          ]
+        },
+        {
+          "id": "zeli-inverse",
+          "name": "Zeli inversé",
+          "labels": {
+            "fr": "Zeli inversé",
+            "en": "Zeli reversed"
+          },
+          "sav_aliases": [
+            "GreeceS3ElatiaCut2Reverse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loutraki",
+      "region": "grece",
+      "name": "Loutraki",
+      "labels": {
+        "fr": "Loutraki",
+        "en": "Loutraki"
+      },
+      "sav_aliases": [],
+      "specials": [
+        {
+          "id": "loutraki-aghii-theodori",
+          "name": "Loutraki - Aghii Theodori",
+          "labels": {
+            "fr": "Loutraki - Aghii Theodori",
+            "en": "Loutraki - Aghii Theodori"
+          },
+          "sav_aliases": [
+            "GreeceS4LoutrakiFullForward"
+          ]
+        },
+        {
+          "id": "aghii-theodori-loutraki",
+          "name": "Aghii Theodori - Loutraki",
+          "labels": {
+            "fr": "Aghii Theodori - Loutraki",
+            "en": "Aghii Theodori - Loutraki"
+          },
+          "sav_aliases": [
+            "GreeceS4LoutrakiFullReverse"
+          ]
+        },
+        {
+          "id": "new-loutraki",
+          "name": "New Loutraki",
+          "labels": {
+            "fr": "New Loutraki",
+            "en": "New Loutraki"
+          },
+          "sav_aliases": [
+            "GreeceS4LoutrakiCut1Forward"
+          ]
+        },
+        {
+          "id": "new-loutraki-inverse",
+          "name": "New Loutraki inversé",
+          "labels": {
+            "fr": "New Loutraki inversé",
+            "en": "New Loutraki reversed"
+          },
+          "sav_aliases": [
+            "GreeceS4LoutrakiCut1Reverse"
+          ]
+        },
+        {
+          "id": "aghii-theodori",
+          "name": "Aghii Theodori",
+          "labels": {
+            "fr": "Aghii Theodori",
+            "en": "Aghii Theodori"
+          },
+          "sav_aliases": [
+            "GreeceS4LoutrakiCut2Forward"
+          ]
+        },
+        {
+          "id": "aghii-theodori-inverse",
+          "name": "Aghii Theodori inversé",
+          "labels": {
+            "fr": "Aghii Theodori inversé",
+            "en": "Aghii Theodori reversed"
+          },
+          "sav_aliases": [
+            "GreeceS4LoutrakiCut2Reverse"
+          ]
+        }
+      ]
+    }
+  ]
+}
