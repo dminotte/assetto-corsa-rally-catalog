@@ -1,6 +1,6 @@
 name: Validate
 
-# Checks donnees.json on every pull request and every push to main, with the same rules as the Assetto Rally Times server.
+# Checks data.json on every pull request and every push to main.
 on:
   pull_request:
   push:
@@ -17,4 +17,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/validate.mjs donnees.json
+      - run: node scripts/validate.mjs data.json
