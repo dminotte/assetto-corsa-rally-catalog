@@ -11,6 +11,57 @@ const COUNTRY_ID_PATTERN = /^([a-z]{2}(-[a-z0-9]{1,8})?|other)$/;
 const LANGUAGES = ["fr", "en"];
 const MAX_PROBLEMS = 30;
 
+// The game's challenges (medals): two optional lists that go together. Ids are the game's own (letters, digits, underscores, case kept).
+const CHALLENGE_ID_PATTERN = /^[A-Za-z0-9_]{1,80}$/;
+const CHALLENGE_KIND_PATTERN = /^[a-z]{3,20}$/;
+
+function checkChallenges(payload, { stages, cars, weather }, add, text) {
+  const hasGroups = payload.challengeGroups !== undefined;
+  const hasChallenges = payload.challenges !== undefined;
+  if (!hasGroups && !hasChallenges) return;
+  if (!hasGroups || !hasChallenges) {
+    add("challengeGroups and challenges go together.");
+    return;
+  }
+  if (!Array.isArray(payload.challengeGroups) || payload.challengeGroups.length === 0) add("The list challengeGroups is missing or empty.");
+  if (!Array.isArray(payload.challenges) || payload.challenges.length === 0) add("The list challenges is missing or empty.");
+  const list = (value) => (Array.isArray(value) ? value : []);
+  const groups = new Map();
+  for (const group of list(payload.challengeGroups)) {
+    if (!CHALLENGE_ID_PATTERN.test(String(group?.id))) add(`Challenge group "${group?.id}": invalid id.`);
+    else if (groups.has(group.id)) add(`Challenge group ${group.id}: duplicate id.`);
+    else groups.set(group.id, group);
+    if (!CHALLENGE_KIND_PATTERN.test(String(group?.kind))) add(`Challenge group ${group?.id}: invalid kind.`);
+    for (const field of ["name", "shortName"]) if (!text(group?.[field])) add(`Challenge group ${group?.id}: missing ${field}.`);
+    for (const field of ["labels", "shortLabels"]) if (!text(group?.[field]?.en)) add(`Challenge group ${group?.id}: missing ${field}.en.`);
+  }
+  const ids = new Set();
+  const used = new Set();
+  for (const item of list(payload.challenges)) {
+    const label = `Challenge ${item?.id}`;
+    if (!CHALLENGE_ID_PATTERN.test(String(item?.id))) add(`Challenge "${item?.id}": invalid id.`);
+    else if (ids.has(item.id)) add(`${label}: duplicate id.`);
+    else ids.add(item.id);
+    if (!groups.has(item?.group)) add(`${label}: unknown group "${item?.group}".`);
+    else used.add(item.group);
+    if (!text(item?.name)) add(`${label}: missing name.`);
+    if (!text(item?.labels?.en)) add(`${label}: missing labels.en.`);
+    if (!stages.has(item?.stage)) add(`${label}: unknown stage "${item?.stage}".`);
+    if (!cars.has(item?.car)) add(`${label}: unknown car "${item?.car}".`);
+    if (!weather.has(item?.weather)) add(`${label}: unknown weather "${item?.weather}".`);
+    if (!/^([01]\d|2[0-3]):[0-5]\d$/.test(String(item?.startTime))) add(`${label}: startTime must be "HH:MM".`);
+    if (item?.type === "time") {
+      const marks = [item.gold, item.silver, item.bronze];
+      if (!marks.every((mark) => Number.isInteger(mark) && mark > 0) || !(item.gold <= item.silver && item.silver <= item.bronze)) add(`${label}: gold, silver and bronze must be increasing whole seconds.`);
+    } else if (item?.type === "position") {
+      if (["gold", "silver", "bronze"].some((field) => item[field] !== undefined)) add(`${label}: a position challenge has no target times.`);
+    } else {
+      add(`${label}: unknown type "${item?.type}" (time or position).`);
+    }
+  }
+  for (const id of groups.keys()) if (!used.has(id)) add(`Challenge group ${id}: no challenge.`);
+}
+
 export function validateCatalog(payload) {
   if (!payload || typeof payload !== "object" || Array.isArray(payload)) return ["The file must be a JSON object."];
   const problems = [];
@@ -115,7 +166,8 @@ export function validateCatalog(payload) {
   }
 
   checkList("modes", "Mode");
-  checkList("weather", "Weather");
+  const weather = checkList("weather", "Weather");
+  checkChallenges(payload, { stages, cars, weather }, add, text);
   return problems;
 }
 
