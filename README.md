@@ -25,9 +25,16 @@ and `schemaVersion` changes when the structure of the file does.
 | `modes` | `id`, `name`, `labels` |
 | `weather` | `id`, `name`, `labels`, `aliases` |
 | `countries` | `id` (ISO code, `gb-wls` for Wales, `other` for Other), `name`, `labels`, `flag`, `aliases` |
+| `challengeGroups` | `id`, `kind` (`sites`, `voitures`, `rallye`), `name`, `shortName`, `labels`, `shortLabels` |
+| `challenges` | `id`, `group`, `type` (`time` or `position`), `name`, `labels`, `stage`, `car`, `weather`, `startTime`, `gold`, `silver`, `bronze` |
 
 An item refers to another by its id: a stage's `track` is the id of an item of `tracks`.
 `labels`, `shortName`, `flag` and `aliases` are only written when needed, and any item may have `aliases`.
+
+The game's challenges (medals) are the two lists `challengeGroups` and `challenges`. They are optional but go together. Their ids are the
+game's own (`Saverne_PART1_F`: letters, digits and underscores, case kept), not lowercase names. `name` is the French text of the game and
+`labels.en` the English one; `stage`, `car` and `weather` are ids of those lists. A `time` challenge has `gold`, `silver` and `bronze`
+in whole, increasing seconds; a `position` challenge (against the AI) has none: gold is 1st, silver 5th or better, bronze 15th or better.
 
 ### Ids and aliases
 
@@ -98,6 +105,9 @@ Données non officielles, sans affiliation avec Kunos Simulazioni, Steam ni Valv
 
 Un id est l'identifiant de l'élément (tel qu'écrit par exemple dans les sauvegardes), en minuscules, lettres et chiffres seulement
 (`alsaces2munsterfullreverse`). `labels.fr` / `labels.en` n'existent que quand le nom à afficher diffère de `name` dans cette langue.
+
+Les défis du jeu (médailles) sont dans `challengeGroups` et `challenges` : identifiants du jeu (`Saverne_PART1_F`, casse conservée), nom français
+dans `name` et anglais dans `labels.en`, seuils `gold`, `silver`, `bronze` en secondes pour un défi chronométré (`time`), aucun pour un défi contre l'IA (`position`).
 
 Pour contribuer : modifie `data.json` et ouvre une pull request. Un contrôle automatique (**Validate**) vérifie les règles
 sur chaque pull request. Le mainteneur relit et fusionne à la main.
