@@ -517,7 +517,10 @@
       "name": "Lancia Rally 037 Evoluzione 2",
       "class": "b2",
       "group": "groupb",
-      "drivetrain": "RWD"
+      "drivetrain": "RWD",
+      "aliases": [
+        "lancia037"
+      ]
     },
     {
       "id": "hyundaii20nrally2",
@@ -573,7 +576,10 @@
       "name": "Fiat 124 Abarth Rally 16V",
       "class": "h2",
       "group": "group24",
-      "drivetrain": "RWD"
+      "drivetrain": "RWD",
+      "aliases": [
+        "fiatabarth124rally"
+      ]
     },
     {
       "id": "alpinea110",
@@ -605,7 +611,10 @@
       "name": "Peugeot 306 II Maxi",
       "class": "k11",
       "group": "groupa",
-      "drivetrain": "FWD"
+      "drivetrain": "FWD",
+      "aliases": [
+        "peugeot306iimaxikit"
+      ]
     },
     {
       "id": "subaruimprezas3",
@@ -637,7 +646,10 @@
       "name": "Peugeot 206 WRC",
       "class": "wr20evo1",
       "group": "groupwr",
-      "drivetrain": "4WD"
+      "drivetrain": "4WD",
+      "aliases": [
+        "peugeot206wrc"
+      ]
     }
   ],
   "classes": [
