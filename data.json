@@ -595,7 +595,10 @@
       "name": "Lancia Fulvia Coupé HF",
       "class": "h3",
       "group": "group24",
-      "drivetrain": "FWD"
+      "drivetrain": "FWD",
+      "aliases": [
+        "lanciafulviacoupehf16"
+      ]
     },
     {
       "id": "skodafabiarsrally2",
