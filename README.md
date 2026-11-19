@@ -88,7 +88,7 @@ You can run it yourself: `node scripts/validate.mjs`.
   a stage's `track`, a class's `group`, a car's `class` and `group` (the group of its class)
 - a location's surface shares are whole percentages adding up to 100
 - a country's `flag`, when written, is `false`
-- every track has a stage, and every stage a positive `lengthKm`; a `shortName` differs from `name`
+- every track has a stage, and every stage a positive `lengthKm` when written (leave it out while the length is unknown); a `shortName` differs from `name`
 - every car has a `manufacturer` and a `drivetrain`
 
 ## License
