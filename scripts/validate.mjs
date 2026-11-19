@@ -148,7 +148,7 @@ export function validateCatalog(payload) {
     if (stage.shortName !== undefined && (!text(stage.shortName) || stage.shortName === stage.name)) {
       add(`Stage ${stage.id}: shortName must be a short name different from name, or left out.`);
     }
-    if (!(typeof stage.lengthKm === "number" && stage.lengthKm > 0)) add(`Stage ${stage.id}: lengthKm must be a positive number.`);
+    if (stage.lengthKm !== undefined && !(typeof stage.lengthKm === "number" && stage.lengthKm > 0)) add(`Stage ${stage.id}: lengthKm must be a positive number, or left out.`);
   }
   for (const track of tracks.values()) {
     if (![...stages.values()].some((stage) => stage.track === track.id)) add(`Track ${track.id}: no stage.`);

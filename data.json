@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "gameVersion": "0.6.0",
+  "gameVersion": "0.7.0",
   "locations": [
     {
       "id": "alsace",
@@ -53,6 +53,17 @@
       "surfaces": {
         "gravel": 79,
         "tarmac": 21
+      }
+    },
+    {
+      "id": "sweden",
+      "name": "Sweden",
+      "labels": {
+        "fr": "Suède"
+      },
+      "country": "se",
+      "surfaces": {
+        "snow": 100
       }
     }
   ],
@@ -120,6 +131,16 @@
       "id": "greeces4loutraki",
       "location": "greece",
       "name": "Loutraki"
+    },
+    {
+      "id": "swedens1vargasen",
+      "location": "sweden",
+      "name": "Vargåsen"
+    },
+    {
+      "id": "swedens3fredriksberg",
+      "location": "sweden",
+      "name": "Fredriksberg"
     }
   ],
   "stages": [
@@ -469,6 +490,97 @@
         "fr": "Aghii Theodori inversé"
       },
       "lengthKm": 5.7
+    },
+    {
+      "id": "swedens1vargasenfullforward",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen"
+    },
+    {
+      "id": "swedens1vargasenfullreverse",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen Reverse",
+      "labels": {
+        "fr": "Vargåsen inversé"
+      }
+    },
+    {
+      "id": "swedens1vargasencut1forward",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen Cut 1"
+    },
+    {
+      "id": "swedens1vargasencut1reverse",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen Cut 1 Reverse",
+      "labels": {
+        "fr": "Vargåsen Cut 1 inversé"
+      }
+    },
+    {
+      "id": "swedens1vargasencut2forward",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen Cut 2"
+    },
+    {
+      "id": "swedens1vargasencut2reverse",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen Cut 2 Reverse",
+      "labels": {
+        "fr": "Vargåsen Cut 2 inversé"
+      }
+    },
+    {
+      "id": "swedens1vargasencut3forward",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen Cut 3"
+    },
+    {
+      "id": "swedens1vargasencut3reverse",
+      "track": "swedens1vargasen",
+      "name": "Vargåsen Cut 3 Reverse",
+      "labels": {
+        "fr": "Vargåsen Cut 3 inversé"
+      }
+    },
+    {
+      "id": "swedens3fredriksbergfullforward",
+      "track": "swedens3fredriksberg",
+      "name": "Fredriksberg"
+    },
+    {
+      "id": "swedens3fredriksbergfullreverse",
+      "track": "swedens3fredriksberg",
+      "name": "Fredriksberg Reverse",
+      "labels": {
+        "fr": "Fredriksberg inversé"
+      }
+    },
+    {
+      "id": "swedens3fredriksbergcut1forward",
+      "track": "swedens3fredriksberg",
+      "name": "Fredriksberg Cut 1"
+    },
+    {
+      "id": "swedens3fredriksbergcut1reverse",
+      "track": "swedens3fredriksberg",
+      "name": "Fredriksberg Cut 1 Reverse",
+      "labels": {
+        "fr": "Fredriksberg Cut 1 inversé"
+      }
+    },
+    {
+      "id": "swedens3fredriksbergcut2forward",
+      "track": "swedens3fredriksberg",
+      "name": "Fredriksberg Cut 2"
+    },
+    {
+      "id": "swedens3fredriksbergcut2reverse",
+      "track": "swedens3fredriksberg",
+      "name": "Fredriksberg Cut 2 Reverse",
+      "labels": {
+        "fr": "Fredriksberg Cut 2 inversé"
+      }
     }
   ],
   "surfaces": [
@@ -653,6 +765,25 @@
       "aliases": [
         "peugeot206wrc"
       ]
+    },
+    {
+      "id": "lanciadeltas4",
+      "manufacturer": "Lancia",
+      "name": "Lancia Delta S4 Group B",
+      "class": "b2",
+      "group": "groupb",
+      "drivetrain": "4WD",
+      "aliases": [
+        "lanciadeltas4groupb"
+      ]
+    },
+    {
+      "id": "lanciadeltas4evo2",
+      "manufacturer": "Lancia",
+      "name": "Lancia Delta S4 Evo2",
+      "class": "b2",
+      "group": "groupb",
+      "drivetrain": "4WD"
     }
   ],
   "classes": [
