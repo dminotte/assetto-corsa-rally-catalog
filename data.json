@@ -494,93 +494,119 @@
     {
       "id": "swedens1vargasenfullforward",
       "track": "swedens1vargasen",
-      "name": "Vargåsen"
+      "name": "Vargåsvägen",
+      "lengthKm": 18.8
     },
     {
       "id": "swedens1vargasenfullreverse",
       "track": "swedens1vargasen",
-      "name": "Vargåsen Reverse",
-      "labels": {
-        "fr": "Vargåsen inversé"
-      }
+      "name": "Ransbysätter",
+      "lengthKm": 18.8
     },
     {
       "id": "swedens1vargasencut1forward",
       "track": "swedens1vargasen",
-      "name": "Vargåsen Cut 1"
+      "name": "Vargåsvägen East",
+      "labels": {
+        "fr": "Vargåsvägen Est"
+      },
+      "lengthKm": 12.2
     },
     {
       "id": "swedens1vargasencut1reverse",
       "track": "swedens1vargasen",
-      "name": "Vargåsen Cut 1 Reverse",
+      "name": "Ransbysätter East",
       "labels": {
-        "fr": "Vargåsen Cut 1 inversé"
-      }
+        "fr": "Ransbysätter Est"
+      },
+      "lengthKm": 12.1
     },
     {
       "id": "swedens1vargasencut2forward",
       "track": "swedens1vargasen",
-      "name": "Vargåsen Cut 2"
+      "name": "Vargåsvägen West",
+      "labels": {
+        "fr": "Vargåsvägen Ouest"
+      },
+      "lengthKm": 11.9
     },
     {
       "id": "swedens1vargasencut2reverse",
       "track": "swedens1vargasen",
-      "name": "Vargåsen Cut 2 Reverse",
+      "name": "Ransbysätter West",
       "labels": {
-        "fr": "Vargåsen Cut 2 inversé"
-      }
+        "fr": "Ransbysätter Ouest"
+      },
+      "lengthKm": 12.1
     },
     {
       "id": "swedens1vargasencut3forward",
       "track": "swedens1vargasen",
-      "name": "Vargåsen Cut 3"
+      "name": "Vargåsvägen South",
+      "labels": {
+        "fr": "Vargåsvägen Sud"
+      },
+      "lengthKm": 10.6
     },
     {
       "id": "swedens1vargasencut3reverse",
       "track": "swedens1vargasen",
-      "name": "Vargåsen Cut 3 Reverse",
+      "name": "Ransbysätter South",
       "labels": {
-        "fr": "Vargåsen Cut 3 inversé"
-      }
+        "fr": "Ransbysätter Sud"
+      },
+      "lengthKm": 10.6
     },
     {
       "id": "swedens3fredriksbergfullforward",
       "track": "swedens3fredriksberg",
-      "name": "Fredriksberg"
+      "name": "Yxtjärnshöjden",
+      "lengthKm": 12.2
     },
     {
       "id": "swedens3fredriksbergfullreverse",
       "track": "swedens3fredriksberg",
-      "name": "Fredriksberg Reverse",
-      "labels": {
-        "fr": "Fredriksberg inversé"
-      }
+      "name": "Gravendal",
+      "lengthKm": 12.2
     },
     {
       "id": "swedens3fredriksbergcut1forward",
       "track": "swedens3fredriksberg",
-      "name": "Fredriksberg Cut 1"
+      "name": "Yxtjärnshöjden West",
+      "labels": {
+        "fr": "Yxtjärnshöjden Ouest"
+      },
+      "lengthKm": 7.2
     },
     {
       "id": "swedens3fredriksbergcut1reverse",
       "track": "swedens3fredriksberg",
-      "name": "Fredriksberg Cut 1 Reverse",
+      "name": "Gravendal West",
       "labels": {
-        "fr": "Fredriksberg Cut 1 inversé"
-      }
+        "fr": "Gravendal Ouest"
+      },
+      "lengthKm": 7.2,
+      "aliases": [
+        "swedens3fredriksbergcu1reverse"
+      ]
     },
     {
       "id": "swedens3fredriksbergcut2forward",
       "track": "swedens3fredriksberg",
-      "name": "Fredriksberg Cut 2"
+      "name": "Yxtjärnshöjden East",
+      "labels": {
+        "fr": "Yxtjärnshöjden Est"
+      },
+      "lengthKm": 6.7
     },
     {
       "id": "swedens3fredriksbergcut2reverse",
       "track": "swedens3fredriksberg",
-      "name": "Fredriksberg Cut 2 Reverse",
+      "name": "Gravendal East",
       "labels": {
-        "fr": "Fredriksberg Cut 2 inversé"
-      }
+        "fr": "Gravendal Est"
+      },
+      "lengthKm": 6.6
     }
   ],
   "surfaces": [
@@ -769,8 +795,8 @@
     {
       "id": "lanciadeltas4",
       "manufacturer": "Lancia",
-      "name": "Lancia Delta S4 Group B",
-      "class": "b2",
+      "name": "Lancia Delta S4",
+      "class": "b1",
       "group": "groupb",
       "drivetrain": "4WD",
       "aliases": [
@@ -780,9 +806,9 @@
     {
       "id": "lanciadeltas4evo2",
       "manufacturer": "Lancia",
-      "name": "Lancia Delta S4 Evo2",
-      "class": "b2",
-      "group": "groupb",
+      "name": "Lancia Delta S4 Evo2 Italtecnica",
+      "class": "s",
+      "group": "groups",
       "drivetrain": "4WD"
     }
   ],
@@ -838,9 +864,19 @@
       "name": "WR Evo1"
     },
     {
+      "id": "b1",
+      "group": "groupb",
+      "name": "B1"
+    },
+    {
       "id": "b2",
       "group": "groupb",
       "name": "B2"
+    },
+    {
+      "id": "s",
+      "group": "groups",
+      "name": "S"
     }
   ],
   "groups": [
@@ -877,6 +913,13 @@
       "name": "Group B",
       "labels": {
         "fr": "Groupe B"
+      }
+    },
+    {
+      "id": "groups",
+      "name": "Group S",
+      "labels": {
+        "fr": "Groupe S"
       }
     }
   ],
